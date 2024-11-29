@@ -1,0 +1,197 @@
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    flex-grow: 1; /* Toma el resto del espacio disponible */
+    padding: 3rem;
+    background-color: #FCF6F6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    
+}
+
+.profile-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.post {
+flex: 1 1 calc(16.666% - 1rem); /* Seis columnas */
+max-width: calc(16.666% - 1rem); /* Seis columnas */
+border-radius: 0.5rem;
+padding: 0.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: transparent;
+}
+
+.recipe-name{
+font-size: 1rem;
+font-weight: 800;
+}
+
+
+
+.recipe-image {
+width: 200px; /* Define un ancho específico */
+height: 250px; /* Define un alto específico */
+box-shadow: 0 0.125rem 0.52rem rgba(0, 0, 0.2, 0.3); 
+object-fit: cover; /* Hace que la imagen se recorte para llenar el contenedor */
+border-radius: 19px; /* Opcional: bordes redondeados */
+}
+
+  
+.profile-info1{
+display: flex;
+
+align-items: center;
+gap: 5rem;
+}
+
+#actions {
+justify-content: center; /* Centra horizontalmente */
+align-items: center; 
+display: flex;
+gap: 5rem;
+margin-bottom: 2rem;
+}
+
+button {
+padding: 0.8rem 2rem;
+font-size: 1rem;
+font-weight: 700;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+width: 11rem;
+}
+
+#edit {
+background-color: #FFC7BE;
+color: white;
+}
+
+#edit:hover {
+background-color: #F2ADA1;
+}
+
+#new-post {
+background-color: #EBEAEA;
+color: #7A7A7A;
+}
+
+#new-post:hover {
+background-color: #C8C8C8;
+}
+.seguidores{
+font-size: 0.9rem;
+color: #7A7A7A;
+}
+#user-img{
+width: 12rem;
+    height: 12rem;
+}
+
+@media screen and (max-width: 26.900rem) {
+    .main-container {
+        display: flex;
+        width: 115%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        padding-top: 3rem;
+    
+        
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 80%;
+        height: 80rem;
+        flex-grow: 1; /* Toma el resto del espacio disponible */
+        padding: 0rem;
+        background-color: #FCF6F6;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+
+    #posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    
+    .post {
+    flex: 1 1 calc(16.666% - 1rem); /* Seis columnas */
+    max-width: calc(16.666% - 1rem); /* Seis columnas */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    }
+
+    .profile-info1 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    #lowered{
+
+        padding-top: 5rem;
+    }
+    
+    #lowered h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0rem;
+    }
+
+    #lowered p {
+margin: 0rem;
+    }
+}

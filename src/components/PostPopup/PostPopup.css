@@ -1,0 +1,168 @@
+/* Estilos generales del popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.image-container img {
+    width: 80%;
+    height: 100%;
+    max-height: 580px; /* Ajusta el tamaño máximo de la imagen */
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    border-radius: 15px;
+}
+
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Título del popup */
+.popup h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 8px 16px; 
+    background-color: #7bbff7; 
+    border-top-right-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de etiquetas */
+.tags-container {
+    display: flex;
+    gap: 1rem; 
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredients, .preparation, .time {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.categorie, .time, .difficulty {
+    width: fit-content;
+    padding: 8px 16px; 
+    color: #84bbd8;
+    background-color: #cbe7ff; 
+    border-radius: 4px; 
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botón de cierre */
+#close-button {
+    position: absolute; 
+    top: 1rem;
+    right: 1rem; 
+    width: 3rem;
+    height: 3rem;
+    background-color: #5ca8ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem; 
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-button:hover {
+    background-color: #005f93;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 26.875rem) {
+    .popup {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    
+    }
+
+    .image-container {
+        width: 100%;
+        height: 10rem;
+        padding-right: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        max-height: 70vh; 
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-y: auto; /* Asegura que haya scroll vertical si el contenido es largo */
+
+    }
+
+    .popup h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: fit-content;
+        padding: 8px 16px;
+        
+    }
+
+    .tags-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ingredients, .preparation, .time {
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}

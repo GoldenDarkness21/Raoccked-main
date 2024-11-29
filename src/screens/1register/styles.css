@@ -1,0 +1,124 @@
+/* Asegúrate de que el contenedor principal ocupe toda la pantalla */
+.principal-section {
+    display: flex;          /* Usar flexbox para disposición horizontal */
+    height: 100vh;         /* Altura completa de la ventana del navegador */
+    width: 100vw;          /* Ancho completo de la ventana del navegador */
+}
+
+.image-section {
+    flex: 1;              
+    background-color: #FFC7BE; 
+    background-image:url('../../assets/images/fondo1.png');
+    background-size: cover; 
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.img-login {
+    flex: 1;               /* Ocupar la mitad del espacio disponible */
+    background-color: #FFC7BE; /* Color de fondo para visualización (opcional) */
+    background-image:url('../../assets/images/fondo1.png');
+    background-size: cover; /* Ajusta para que cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    overflow: hidden; /* Asegura que cualquier exceso se oculte */
+}
+
+.form-section {
+    flex: 1;               /* Ocupar la mitad del espacio disponible */
+    display: flex;         /* Usar flexbox para disposición vertical */
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: flex-start; /* Centrar verticalmente los elementos (opcional) */
+    align-items: center;
+    padding: 20px;        /* Espaciado interno */
+    background-color: rgb(255, 255, 255); /* Color de fondo para visualización (opcional) */
+}
+
+.button-container {
+    display: flex;         
+    justify-content: center; 
+    gap: 170px;                  /* Espacio entre botones, ajusta según sea necesario */
+    margin: 5rem;       /* Espacio debajo de los botones */
+}
+
+
+
+/* Estilos para los elementos del formulario */
+input {
+    margin-bottom: 10px; /* Espacio entre los campos del formulario */
+    padding: 10px;       /* Espaciado interno en los campos */
+}
+
+button {
+    margin-top: 10px;    /* Espacio arriba del botón de guardar */
+}
+
+/* Asegúrate de que el body y el html tengan altura y ancho 100% si es necesario */
+html, body {
+    height: 100%;
+    width: 100%;           /* Ancho completo */
+    margin: 0;            /* Eliminar márgenes por defecto */
+    overflow: hidden;      /* Evitar barras de desplazamiento */
+}
+
+.login {
+    border-color: transparent;
+    background-color: transparent;
+    color: #C3C3C3;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.title {
+    color: #EBA79C;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.signUp {
+    border-color: transparent;
+    font-weight: 600;
+    background-color: transparent;
+    color: #EBA79C;
+    font-size: 18px;
+    border-bottom: 5px solid #EBA79C; /* Agrega un borde inferior de 2px, puedes ajustar el color */
+    outline: none;
+    box-sizing: border-box;  
+}
+
+.formfield {
+    width: 17rem;
+    border: none;                   /* Elimina todos los bordes */
+    border-bottom: 2px solid #D9D9D9; /* Agrega un borde inferior de 2px, puedes ajustar el color */
+    outline: none;                 /* Elimina el contorno que aparece al hacer clic */
+    padding: 10px;                /* Espaciado interno opcional */
+    box-sizing: border-box;       /* Asegura que el padding no afecte el ancho total */
+}
+.save {
+    margin: 2rem;
+    background-color: #EBA79C; /* Color de fondo */
+    color: white;              /* Color del texto */
+    border-radius: 10px;      /* Bordes redondeados */
+    width: 12rem;             /* Ancho del botón */
+    height: 2rem;             /* Altura del botón */
+    font-size: 17px;          /* Tamaño de la fuente */
+    border: none;             /* Sin borde visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+.save:hover {
+    background-color: #ec9486; /* Color de fondo al pasar el mouse (puedes ajustarlo) */
+    transform: scale(1.05);    /* Efecto de aumentar tamaño */
+}
+
+.label {
+    color: #C3C3C3; /* Color gris, puedes ajustar el valor si deseas otro tono */
+    font-size: 14px; /* Ajusta el tamaño de fuente según lo necesites */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+    align-self: flex-start; /* Alinear etiquetas a la izquierda (opcional) */
+    margin-left: 15rem;
+}
+
+

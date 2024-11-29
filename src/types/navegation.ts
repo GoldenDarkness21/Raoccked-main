@@ -1,0 +1,10 @@
+export enum Screens {
+    REGISTER = "REGISTER",
+    LOGIN = "LOGIN",
+    DASHBOARD = "DASHBOARD",
+    POST = "POST",
+    CREATEPOST = "CREATEPOST",
+    FAVORITES = "FAVORITES",
+    PROFILE = "PROFILE",
+    SETTINGS = "SETTINGS",
+}
